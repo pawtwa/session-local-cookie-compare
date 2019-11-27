@@ -1,0 +1,28 @@
+main {
+  padding: 30px;
+
+  #storage-box {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+
+    .box {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: min-content min-content max-content;
+      justify-items: center;
+
+      .key-value-pairs {
+        margin: 0;
+
+        .key-value-pair {
+          padding: 5px;
+          margin: 2px;
+          border: #a5b604 1px dashed;
+        }
+      }
+    }
+  }
+}
+

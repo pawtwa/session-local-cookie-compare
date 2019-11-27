@@ -8,8 +8,29 @@
   </head>
   <body>
     <main>
-        This is a WebPack 4 Starter App!
+      <div id="storage-box">
+        <div class="local-box box">
+          <p><button id="local-random-pair-btn" type="button">Set random</button></p>
+          <h2>Local Storage</h2>
+          <ul id="local-key-value-pairs" class="key-value-pairs">
+
+          </ul>
+        </div>
+        <div class="session-box box">
+          <p><button id="session-random-pair-btn" type="button">Set random</button></p>
+          <h2>Session Storage</h2>
+          <ul id="session-key-value-pairs" class="key-value-pairs">
+
+          </ul>
+        </div>
+      </div>
     </main>
+    <template id="key-value-pair-template">
+      <li class="key-value-pair">
+        <h4 class="key"></h4>
+        <p class="value"></p>
+      </li>
+    </template>
     <script src="/bundle.js"></script>
   </body>
 </html>
